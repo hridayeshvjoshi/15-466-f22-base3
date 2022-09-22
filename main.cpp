@@ -182,11 +182,10 @@ int main(int argc, char **argv) {
 			if (!Mode::current) break;
 		}
 
-		{ //(3) call the current mode's "draw" function to produce output:
+		// { //(3) call the current mode's "draw" function to produce output:
 		
-			Mode::current->draw(drawable_size);
-		}
-
+		// 	Mode::current->draw(drawable_size);
+		// }
 		//Wait until the recently-drawn frame is shown before doing it all again:
 		SDL_GL_SwapWindow(window);
 	}
